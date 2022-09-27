@@ -2,6 +2,7 @@ import { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css"
 import toastr from 'toastr'
 import 'toastr/build/toastr.min.css'
+import './App.css'
 
 function App() {
   const [email, setEmail] = useState('')
@@ -32,7 +33,7 @@ function App() {
       </div>
       :
       <div style={{display: 'flex', justifyContent: 'center'}}>
-        <div style={{width: '30%'}} className="Auth-form-container">
+        <div className="Auth-form-container container-width">
           <form className="Auth-form">
             <div className="Auth-form-content">
               <h3 className="Auth-form-title">Sign In</h3>
